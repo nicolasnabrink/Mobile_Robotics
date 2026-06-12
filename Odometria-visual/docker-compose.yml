@@ -1,0 +1,14 @@
+services:
+  odometria-visual:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: odometria-visual-arm64
+    platform: linux/arm64/v8
+    container_name: odometria-visual-arm64
+    working_dir: /work
+    volumes:
+      - .:/work
+    ports:
+      - "8888:8888"
+    command: sleep infinity
