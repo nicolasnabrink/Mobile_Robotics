@@ -23,7 +23,7 @@ from picamera2 import Picamera2
 LOCALIZACAO_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 CALIB_PATH = os.path.join(LOCALIZACAO_DIR, "camera_calibration_results.npz")
 
-# Parametros usados no final de odometria_visual.ipynb para o remapeamento
+# Parâmetros usados no final de odometria_visual.ipynb para o remapeamento
 # completo no solo.
 PIXELS_POR_MM = 2.0
 XMAX_MM = 400.0
